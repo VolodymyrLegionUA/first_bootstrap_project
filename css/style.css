@@ -7,8 +7,6 @@
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-srolling: touch;
 }
-.container{
-}
 .navbar {
   display: flex;
   font-weight: 800;
@@ -237,6 +235,9 @@ hr{
 .footer a{
   font-family: "Times New Roman", sans-serif;
   font-weight: bold;
-  font-size: 24px;
-  margin-left: 15px;
+  font-size: 18px;
+}
+.footer .nav-item{
+  margin-left: auto;
+  margin-right: auto;
 }
