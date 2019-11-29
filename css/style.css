@@ -141,9 +141,14 @@
   vertical-align: top;
 }
 .special img{
-  background: url('../img/fish.png') no-repeat center left /cover;
-  width: 600px;
-  height: 300px;
+  float: left;
+  width: 55%;
+  height: 280px;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .menu h5{
   text-align: center;
@@ -154,12 +159,20 @@
   color: black;
   margin-bottom: 80px;
 }
-.carts{
+.carts {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  margin: 0 auto;
   text-align: center;
-  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.carts img{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.carts button:before{
+  color: #000;
 }
 .carts h6{
   font-family: "Times New Roman", sans-serif;
@@ -183,14 +196,14 @@ p.last{
 hr{
   border-top: 2px solid #e1e1e1;
 }
-.cart img{
+/*.cart img{
   width: 500px;
   height: 400px;
 }
 .cart_1 img{
   width: 500px;
   height: 400px;
-}
+}*/
 .forma {
   display: flex;
   margin-top: 100px;
@@ -228,16 +241,77 @@ hr{
 }
 .footer{
   margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
   color: white;
+}
+.footer .collapse{
+  margin-left: 100px;
 }
 .footer a{
   font-family: "Times New Roman", sans-serif;
   font-weight: bold;
   font-size: 18px;
 }
-.footer .nav-item{
-  margin-left: auto;
-  margin-right: auto;
+.preloader {
+  --bg-color: #1e212a;
+  --size: 200px;
+  --first-color: #ec164f;
+  --second-color: #ffc952;
+  --third-color: #47b8e0;
+  --thickness: 3px;
+  --duration: 1s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--duration);
+  z-index: 1;
+}
+
+.preloader_content {
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+}
+
+.preloader_first,
+.preloader_second,
+.preloader_third {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: var(--duration) linear infinite;
+}
+
+.preloader_first {
+  border-bottom: var(--thickness) solid var(--first-color);
+  animation-name: first;
+}
+
+.preloader_second {
+  border-right: var(--thickness) solid var(--second-color);
+  animation-name: second;
+}
+
+.preloader_third {
+  border-top: var(--thickness) solid var(--third-color);
+  animation-name: third;
+}
+
+@keyframes first {
+  0% { transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg); }
+  100% { transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg); }
+}
+
+@keyframes second {
+  0% { transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg); }
+  100% { transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg); }
+}
+
+@keyframes third {
+  0% { transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg); }
+  100% { transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg); }
 }

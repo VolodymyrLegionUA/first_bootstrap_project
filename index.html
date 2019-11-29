@@ -15,12 +15,22 @@
   <meta property="og:url" content="#">
   <meta property="og:locale" content="en_EN">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptation.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="icon" type="image/png" href="img/logo.png">
   <title>Luxury restaurant</title>
 </head>
 <body>
+  <div class="preloader">
+      <div class="preloader_content">
+          <div class="preloader_first"></div>
+          <div class="preloader_second"></div>
+          <div class="preloader_third"></div>
+      </div>
+  </div>
   <header class="header">
    <div class="container">
      <nav class="navbar navbar-expand-lg navbar-light">
@@ -30,13 +40,13 @@
       </button>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">MENU</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">RESTAVRATION</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">RECIPE</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">BLOG</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">PAGES</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+          <li class="nav-item"><a href="#headewrap" class="nav-link">HOME</a></li>
+          <li class="nav-item"><a href="#special" class="nav-link">MENU</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" id="restavration">RESTAVRATION</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" id="recipe">RECIPE</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" id="blog">BLOG</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" id="pages">PAGES</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" id="contact">CONTACT</a></li>
           <li class="nav-item"><p class="table">Book your table</p></li>
         </ul>
    </div>
@@ -57,28 +67,28 @@
     </div>
   </div>
   </header>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="row centered">
           <div class="col-lg-12">
-            <h3>About Restaurent</h3>
-            <img src="img/vegetables1.png" alt="Vegetables">
-            <img src="img/vegetables2.png" alt="Vegetables">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br>
+            <h3 class="left animated">About Restaurent</h3>
+            <img src="img/vegetables1.png" alt="Vegetables" class="right animated">
+            <img src="img/vegetables2.png" alt="Vegetables" class="right animated">
+            <p class="left animated">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br>
                Ipsum has been the industry's standard dummy text ever since the 1500s, when an <br>
                 unknown printer took a galley of type and scrambled it to make a type specimen book. <br>
                  It has survived not only five centuries, but also the leap into electronic typesetting, <br>
                   remaining essentially unchanged... </p>
-                  <a href="#">READ MORE</a>
+                  <a href="#" class="button left animated">READ MORE</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="special">
+    <section class="special" id="special">
+        <img src="img/fish.png" alt="Fish">
       <div class="container">
         <div class="row centered">
           <div class="col-lg-12">
-              <img src="img/fish.png" alt="Fish">
             <div class="main">
             <h4>Today Special</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br>
@@ -99,7 +109,7 @@
             <h5>Special Menu</h5>
             <div class="carts">
               <div class="cart">
-                <img src="img/salad.png" alt="Salad">
+              <img src="img/salad.png" alt="Salad">
                 <h6>Food Name one</h6>
                 <p>printing and typesetting industry. Lorem Ipsum has been the industry's <br>
                    standard dummy text ever since the 1500s, when an unknown printer took a <br>
@@ -126,8 +136,8 @@
         <div class="row centered">
           <div class="col-lg-12">
             <form class="forms" action="index.html" method="post">
-              <h6>Reserve Your Table</h6>
-                <img src="img/flowers.png" alt="flowers">
+              <h6 class="right animated">Reserve Your Table</h6>
+                <img src="img/flowers.png" alt="flowers" class="left animated">
                 <input type="text" name="#" value="" placeholder="Name*">
                 <input type="email" name="#" value="" placeholder="Email Address*">
                 <input type="text" name="#" value="" placeholder="Phone Number*">
@@ -145,9 +155,9 @@
          </button>
          <div class="collapse navbar-collapse">
            <ul class="navbar-nav mr-auto">
-             <li class="nav-item"><a href="#" class="nav-link" style="color: #adb2b7;">Home</a></li>
-             <li class="nav-item"><a href="#" class="nav-link" style="color: #adb2b7;">About us</a></li>
-             <li class="nav-item"><a href="#" class="nav-link" style="color: #adb2b7;">Menu</a></li>
+             <li class="nav-item"><a href="#headewrap" class="nav-link" style="color: #adb2b7;">Home</a></li>
+             <li class="nav-item"><a href="#about" class="nav-link" style="color: #adb2b7;">About us</a></li>
+             <li class="nav-item"><a href="#special" class="nav-link" style="color: #adb2b7;">Menu</a></li>
              <li class="nav-item"><a href="#" class="nav-link" style="color: #adb2b7;">Reservation</a></li>
              <li class="nav-item"><a href="#" class="nav-link" style="color: #adb2b7;">Recipe</a></li>
              <li class="nav-item"><a href="#" class="nav-link" style="color: #adb2b7;">Blog</a></li>
@@ -159,11 +169,9 @@
         </div>
       </nav>
     </footer>
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" type='text/jscript' src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/gulp.js">
-
-    </script>
 </body>
 </html>

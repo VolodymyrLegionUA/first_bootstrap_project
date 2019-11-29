@@ -17,7 +17,7 @@
   .special img{
     margin-top: 0px;
     width: 450px;
-    height: 300px;
+    height: 285px;
   }
   #headewrap p{
     margin-left: 30px;
@@ -38,15 +38,17 @@
     font-weight: bold;
     font-size: 15px;
   }
+  .footer .collapse{
+    margin-left: 100px;
+  }
 /* 768-992px */
 @media screen and (max-width: 992px) {
   .special img{
-    margin-top: 150px;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 287px;
   }
   .main{
-    width: 350px;
+    width: 450px;
   }
   .carts{
     display: flex;
@@ -101,14 +103,6 @@
     text-align: center;
     flex-direction: column;
   }
-  .cart {
-    width: 100%;
-  }
-  .cart img{
-    padding: 0;
-    margin: 0;
-    width: 350px;
-  }
   .forms img{
     display: flex;
     text-align: center;
@@ -123,11 +117,17 @@
     margin: 0;
   }
 }
+.footer .collapse{
+  margin-left: 0;
+}
 /* 320-576px */
 @media screen and (max-width: 576px) {
   #headewrap p{
     margin-left: 0px;
   }
+#headewrap h2{
+  font-size: 25px;
+}
   .about img{
     width: 150px;
     height: 120px;
@@ -135,37 +135,28 @@
     float: right;
     margin-left: 30px;
   }
-  .special img{
+ .special img{
     display: block;
+    position: absolute;
     justify-content: center;
-    margin: 50px auto;
-    width: 250px;
-    height: 150px;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
     text-align: center;
   }
   .main{
     display: block;
-    margin: 0px auto;
     justify-content: center;
     float: none;
+    align-items: center;
     width: 80%;
   }
   .main h4{
-    margin-top: -70px;
+    margin-top: 170px;
   }
-  .cart{
-    width: 70%;
-  }
-  .cart_1{
-    width: 70%
-  }
-  .cart img{
-    width: 200px;
-    height: 120px;
-  }
-  .cart_1 img{
-    width: 200px;
-    height: 120px;
+  .carts img{
+    width: 300px;
+    height: 220px;
   }
   .forms img{
     display: flex;
@@ -179,5 +170,8 @@
   }
   .footer a{
     margin: 0;
+  }
+  .footer .collapse{
+    margin-left: 0;
   }
 }
